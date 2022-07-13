@@ -3,7 +3,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-s
+import java.io.IOException;
+import java.io.PrintWriter;
 
 @WebServlet(name = "TestServlet", urlPatterns = "/test")
 public class TestServlet extends HttpServlet {
