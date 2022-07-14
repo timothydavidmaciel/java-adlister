@@ -2,10 +2,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <%@include file="partials/Head.jsp"%>
 <%--    <link rel="stylesheet" href="css/index.css" type="text/css">--%>
     <title><%= "some title" %></title>
 </head>
 <body>
+<header>
+    <%@include file="partials/NavBar.jsp"%>
+</header>
 <form action="/login.jsp">
     <input type="submit" value="Go to login" />
 </form>

@@ -8,9 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <%@include file="partials/Head.jsp"%>
     <title>Profile View</title>
 </head>
 <body>
+<%@include file="partials/NavBar.jsp"%>
 <h1>Welcome to your profile!!!!</h1>
 </body>
 </html>

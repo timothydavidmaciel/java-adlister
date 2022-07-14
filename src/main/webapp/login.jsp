@@ -8,11 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <%@include file="partials/Head.jsp"%>
     <%--    <link rel="stylesheet" href="css/login.css" type="text/css">--%>
     <title>Title</title>
 </head>
 <body>
 <header>
+    <%@include file="partials/NavBar.jsp"%>
     <h1>The login form!</h1>
     <form action="login.jsp" method="POST">
         <label for="username">Username</label>
