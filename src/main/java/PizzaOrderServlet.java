@@ -15,13 +15,42 @@ public class PizzaOrderServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         PrintWriter out = response.getWriter();
         out.println("Here is your order!");
+        out.println("");
+
         out.println(request.getParameter("pizzaCrust"));
         out.println(request.getParameter("pizzaSauce"));
         out.println(request.getParameter("pizzaSize"));
-        System.out.println(request.getParameter("pizzaCrust"));
-        System.out.println(request.getParameter("pizzaSauce"));
-        System.out.println(request.getParameter("pizzaSize"));
-    }
 
-    ;
+        if (request.getParameter("pizzaToppings1") != null) {
+            out.println(request.getParameter("pizzaToppings1"));
+        } else {
+            out.println("");
+        }
+
+        if (request.getParameter("pizzaToppings2") != null) {
+            out.println(request.getParameter("pizzaToppings2"));
+        } else {
+            out.println("");
+        }
+
+        if (request.getParameter("pizzaToppings3") != null) {
+            out.println(request.getParameter("pizzaToppings3"));
+        } else {
+            out.println("");
+        }
+
+        out.println("");
+        out.println("Your delivery address is:");
+        out.println("");
+
+        out.println(request.getParameter("streetAddress"));
+
+        if (request.getParameter("streetApt") != null) {
+            out.println(request.getParameter("streetApt"));
+        }
+
+        out.println(request.getParameter("streetCity"));
+        out.println(request.getParameter("streetState"));
+        out.println(request.getParameter("streetZipCode"));
+    }
 }
