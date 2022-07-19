@@ -11,10 +11,10 @@
     <title>Title</title>
 </head>
 <body>
-<form action="guess.jsp" method="POST">
+<form action="guess" method="POST">
     <label for="number">Guess a number between 1 and 3 to win!</label>
     <input type="text" name="number" id="number">
-    <button type="submit">Submit</button>
+    <button name="guess" type="submit">Submit</button>
 </form>
 </body>
 </html>
